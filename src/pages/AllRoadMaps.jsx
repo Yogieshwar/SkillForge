@@ -50,7 +50,7 @@ const AllRoadMaps = () => {
   const handleViewResources = async (title) => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/resources?topic=${title}`,
+        `https://skillforge-backend-apz3.onrender.com/api/resources?topic=${title}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

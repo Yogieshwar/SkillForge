@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API=axios.create({
-    baseURL:"http://localhost:5000/api/auth",
+    baseURL:"https://skillforge-backend-apz3.onrender.com/api/auth",
 })
 
 export const register=(userData)=>API.post('/register',userData)

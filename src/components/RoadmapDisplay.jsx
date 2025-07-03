@@ -41,7 +41,7 @@ const RoadmapDisplay = () => {
     try {
       console.log(title)
       const res = await axios.get(
-        `http://localhost:5000/api/resources?topic=${title}`,
+        `https://skillforge-backend-apz3.onrender.com/api/resources?topic=${title}`,
         
         {
           headers: {
@@ -72,7 +72,7 @@ const RoadmapDisplay = () => {
       const { goal, steps } = roadmap;
 
       await axios.post(
-        "http://localhost:5000/api/roadmap/save",
+        "https://skillforge-backend-apz3.onrender.com/api/roadmap/save",
         { goal, steps },
         {
           headers: {
