@@ -61,9 +61,12 @@ const Login = () => {
             <p className="text-center text-sm text-gray-700 mt-2">{message}</p>
           )}
         </form>
-        <p className="mt-3 text-sm">
+        <p className="mt-3 text-sm flex justify-between">
           <a href="/forgot-password" className="text-blue-400 hover:underline">
             Forgot Password?
+          </a>
+          <a href="/register" className="text-blue-400 hover:underline">
+            Don't Have Account?
           </a>
         </p>
       </AuthFormWrapper>

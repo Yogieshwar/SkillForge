@@ -37,7 +37,7 @@ const Register = () => {
             onChange={handleChange}
             value={formData.name}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 text-black py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             name="email"
@@ -46,7 +46,8 @@ const Register = () => {
             onChange={handleChange}
             value={formData.email}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 text-black py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            
           />
           <input
             name="password"
@@ -55,7 +56,7 @@ const Register = () => {
             onChange={handleChange}
             value={formData.password}
             required
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button
             type="submit"
@@ -67,6 +68,11 @@ const Register = () => {
             <p className="text-center text-sm text-gray-700 mt-2">{message}</p>
           )}
         </form>
+        <p className="mt-3 text-sm flex justify-between">
+          <a href="/login" className="text-blue-400 hover:underline">
+            Already Have Account?
+          </a>
+        </p>
       </AuthFormWrapper>
     </>
   );
