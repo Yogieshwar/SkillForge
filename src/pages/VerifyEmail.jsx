@@ -12,7 +12,7 @@ const VerifyEmail = () => {
     const verify = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/auth/verify-email/${token}`
+          `https://skillforge-backend-apz3.onrender.com/api/auth/verify-email/${token}`
         );
         console.log(res);
         setStatus(res.data.message);
