@@ -23,7 +23,7 @@ const Register = () => {
       setMessage(res.data.message);
     } catch (err) {
         console.log(err)
-      setMessage(err.Response?.data?.message || "Registration failed");
+      setMessage(err.response?.data?.message || "Registration failed");
     }
   };
   return (
